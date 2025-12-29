@@ -55,6 +55,7 @@ const components = [
 		name: "Nitro avatar decorations",
 		description: "Removes the member list and profile card avatar decoration from users that have them enabled",
 		rules: `
+      img[class*=avatarDecoration] { display: none !important; }
       svg[class*=avatarDecoration] { display: none !important; }
     `
 	},
@@ -63,6 +64,7 @@ const components = [
 		description: "Removes the member list background effects from users that have them enabled",
 		rules: `
       div[class*=nameplated] > div[class*=container] { display: none !important; }
+      div[class*=interactive] > div[class*=container] { display: none !important; }
     `
 	},
 	{
